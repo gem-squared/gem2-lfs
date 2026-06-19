@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "gem2-lfs": {
+      "command": "go",
+      "args": ["run", "./cmd/gem2-lfs/", "mcp", "--db-path", ".gem2-lfs/data.db"]
+    }
+  }
+}

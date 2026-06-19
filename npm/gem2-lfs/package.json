@@ -1,0 +1,30 @@
+{
+  "name": "@gem_squared/gem2-lfs",
+  "version": "0.1.0",
+  "description": "Lightweight Local Knowledge Store — SQLite-backed drop-in for gem2-kg",
+  "bin": {
+    "gem2-lfs": "bin/gem2-lfs"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "README.md",
+    "LICENSE"
+  ],
+  "optionalDependencies": {
+    "@gem_squared/gem2-lfs-darwin-arm64": "0.1.0",
+    "@gem_squared/gem2-lfs-darwin-x64": "0.1.0",
+    "@gem_squared/gem2-lfs-linux-x64": "0.1.0",
+    "@gem_squared/gem2-lfs-linux-arm64": "0.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gem-squared/gem2-lfs"
+  },
+  "keywords": ["gem2", "knowledge-store", "sqlite", "lfs"],
+  "author": "David Seo <david@gem2.ai>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16"
+  }
+}

@@ -1,0 +1,27 @@
+services:
+  gem2-lfs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: gem2-lfs
+    ports:
+      - "9090:9090"
+    volumes:
+      - lfs_data:/data
+    environment:
+      - GEM2_LFS_MODE=sqlite-only
+    command: ["serve", "--port", "9090", "--db-path", "/data/gem2-lfs.db", "--mode", "sqlite-only"]
+
+  # Optional: enable Ollama for semantic search.
+  # Uncomment and set mode to sqlite-ollama.
+  # ollama:
+  #   image: ollama/ollama:latest
+  #   container_name: gem2-lfs-ollama
+  #   ports:
+  #     - "11434:11434"
+  #   volumes:
+  #     - ollama_data:/root/.ollama
+
+volumes:
+  lfs_data:
+  # ollama_data:

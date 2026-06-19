@@ -1,0 +1,37 @@
+# Binaries
+/gem2-lfs
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Database files
+*.db
+*.db-wal
+*.db-shm
+.gem2-lfs/
+
+# Go
+vendor/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ───── Confidential / internal — not for public repo ───────────────
+CLAUDE.md
+README-internal.md
+Doc/
+Doc/*
+.gem-squared/
+.gem-squared/*
+.claude/
+.claude/*
+*init-session*.txt

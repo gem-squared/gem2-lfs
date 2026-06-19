@@ -1,0 +1,17 @@
+{
+  "name": "@gem_squared/gem2-lfs-darwin-x64",
+  "version": "0.1.0",
+  "description": "gem2-lfs binary for macOS x64 (Intel)",
+  "os": ["darwin"],
+  "cpu": ["x64"],
+  "files": [
+    "bin/",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gem-squared/gem2-lfs"
+  },
+  "author": "David Seo <david@gem2.ai>",
+  "license": "MIT"
+}
